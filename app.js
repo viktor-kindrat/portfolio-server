@@ -3,7 +3,7 @@ const express = require("express");
 const bodyParser = require("body-parser")
 const cors = require("cors")
 const mongoose = require("mongoose");
-const PORT = 3000 || process.env.PORT;
+const PORT = process.env.PORT || 3000;
 
 const Router = require("./Routers/AppRouter");
 const DbRouter = require("./DataBase/Router/DbRouter")
