@@ -16,7 +16,8 @@
     "description": "portfolio server",
     "main": "app.js",
     "scripts": {
-        "test": "nodemon app"
+        "test": "nodemon app",
+        "start": "node app"
     },
     "author": "Viktor Kindrat",
     "license": "ISC"

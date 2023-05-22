@@ -13,7 +13,8 @@ app.use(express.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(Router);
 app.use("/db", DbRouter);
-app.use(cors())
+app.use(cors());
+app.options('*', cors());
 
 let start = async() => {
     try {

@@ -7,3 +7,11 @@ The project involves creating a server for a portfolio using an API to retrieve 
 - Telegram Bot API: Allows for the creation of a bot to interact with Telegram users and receive messages or notifications.
 - Mongoose: An object modeling tool for MongoDB, providing a higher level of abstraction and making it easier to interact with the database.
 - Dotenv: A zero-dependency module that loads environment variables from a .env file, allowing for secure configuration of sensitive data such as API keys or database credentials.
+
+### Queries avialible:
+
+`db/getCertificates` - returns array of certifications from MongoDb
+
+`db/getSkills` - returns array of skills from MongoDb
+
+`db/getProjects` - returns array of projects from MongoDb
