@@ -7,12 +7,14 @@ const PORT = process.env.PORT || 3000;
 
 const Router = require("./Routers/AppRouter");
 const DbRouter = require("./DataBase/Router/DbRouter")
+const Bot = require("./Routers/Bot")
 
 let app = express();
 app.use(express.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(Router);
 app.use("/db", DbRouter);
+Router.use("/sendMessage", Bot)
 app.use(cors());
 app.options('*', cors());
 
